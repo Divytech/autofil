@@ -35,6 +35,7 @@ async def send_for_index(bot, message):
     # Wait for the next message from the user
     @Client.on_message(filters.private & filters.incoming & filters.user(message.from_user.id))
     async def handle_next_message(bot, msg):
+        global msg
         await i.delete()
     if msg.text and msg.text.startswith("https://t.me"):
         try:
