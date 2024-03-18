@@ -1,6 +1,6 @@
 import logging
 import asyncio
-from pyromod import listen, listening
+from pyromod import listen
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified, UserIsBlocked
