@@ -4,6 +4,7 @@ motor
 marshmallow
 umongo
 pymongo
+pyromod
 pytz
 cinemagoer
 shortzy
