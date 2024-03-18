@@ -34,9 +34,8 @@ async def send_for_index(bot, message):
     i = await message.reply("Forward last message or send last message link.")
     # Wait for the next message from the user
     @Client.on_message(filters.private & filters.incoming & filters.user(message.from_user.id))
-    async def handle_next_message(bot, msg):
-        global msg
-        await i.delete()
+   async def send_for_index(bot, message, msg):
+    # Rest of your code
     if msg.text and msg.text.startswith("https://t.me"):
         try:
             msg_link = msg.text.split("/")
